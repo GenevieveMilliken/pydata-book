@@ -2,6 +2,8 @@ General notes for working through Wes McKinney's Python for Data Analysis
 
 1/17/2020
 
+
+------- Chapter 2 ----------- 
 #Running the Jupyter Notebook 
 
 from the terminal, run 
@@ -47,4 +49,19 @@ np.load
 np.loads
 np.loadtxt
 np.pkgload
+
+The %run Command
+
+you can run python files in a IPython session by passing the filename to the run command:
+
+In [1] my_script.py %run
+
+
+
+
+
+
+
+
+
 
