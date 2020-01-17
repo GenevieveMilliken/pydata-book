@@ -1,17 +1,31 @@
 General notes for working through Wes McKinney's Python for Data Analysis
 
-1/17/2020
+------- Chapter 2: Python Language Basics, IPython, and Jupyter Notebooks --------
 
+## Python Interpreter
 
-------- Chapter 2 ----------- 
-#Running the Jupyter Notebook 
+The python interpreter can be launched in the commpand line using: 
 
-from the terminal, run 
+$ python 
+
+running a Python script from the command line is a simple as navigating the the correct directory and running: 
+
+$ python my_script.py
+
+	---------------------------------------------------------
+
+## IPython Basics
+IPython is the underlying structure of Jupyter Notebooks. Learning IPython allows you to understand some of the underlying features of Jupyter Notebooks. 
+
+The Ipython shell can be launched in the commpand line using:
+
+$ ipython
+
+Jupyter Notebook can be launched from the terminal use: 
+
 $ jupyter notebook
 
-#tab completion in ipython and Jupyter Notebooks 
-
-pressing the tab key will search the namespace for any variable (objects, functions, etc) matching the characters you have typed so far: 
+Tab completion is available for both ipython and Jupyter Notebooks. Pressing the tab key will search the namespace for any variable (objects, functions, etc) matching the characters you have typed so far. For example: 
 
 In [1]: an_apple = 27
 
@@ -27,7 +41,7 @@ b.append	b.count
 b.clear		b.extend
 b.copy 		b. index
 
-same goes for modules! 
+Tabs can also be used for modules: 
 
 In [1] import datetime
 
@@ -37,10 +51,21 @@ datetime.MAXYEAR       datetime.datetime      datetime.timedelta
 datetime.MINYEAR       datetime.datetime_CAPI datetime.timezone
 datetime.date          datetime.time          datetime.tzinfo
 
-#introspection 
+Introspection is the use of a question mark before or after a variable to get more information about it. For example: 
 
-Using ? ?? & wildcard 
+In [1]: b = [1,2,3]
 
+In [2]: b?
+Type:        list
+String form: [1, 2, 3]
+Length:      3
+Docstring:
+Built-in mutable sequence.
+
+If no argument is given, the constructor creates a new empty list.
+The argument must be an iterable if specified.
+
+Likewise, you can also use a wildcard to get more information. For example: 
 In [8]: import numpy as np
 
 In [9]: np.*load*?
@@ -50,15 +75,22 @@ np.loads
 np.loadtxt
 np.pkgload
 
-The %run Command
-
-you can run python files in a IPython session by passing the filename to the run command:
+The %run Command allows you to run any file as a Python program, which performs the same as if you were running $ python my_script.py. You can run python files in a IPython session by passing the filename to the run command:
 
 In [1] my_script.py %run
 
+in Jupyter notebooks, you may also use the related %load magic function, which imports a script into a code cell:
 
+%load my_script.py
 
+Terminal Shortcuts: 
 
+https://github.com/GenevieveMilliken/terminal-mac-cheatsheet
+
+IPython magic commands: 
+https://ipython.readthedocs.io/en/stable/interactive/magics.html
+
+Matplot Integration 
 
 
 
