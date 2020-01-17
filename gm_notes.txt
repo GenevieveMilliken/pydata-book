@@ -1,0 +1,50 @@
+General notes for working through Wes McKinney's Python for Data Analysis
+
+1/17/2020
+
+#Running the Jupyter Notebook 
+
+from the terminal, run 
+$ jupyter notebook
+
+#tab completion in ipython and Jupyter Notebooks 
+
+pressing the tab key will search the namespace for any variable (objects, functions, etc) matching the characters you have typed so far: 
+
+In [1]: an_apple = 27
+
+In [2]: an_example = 42
+
+In [3]: an<TAB> 
+an_apple and 		an_example
+
+In [4]: b = [1,2,3]
+
+In [5]: b.<TAB>
+b.append	b.count
+b.clear		b.extend
+b.copy 		b. index
+
+same goes for modules! 
+
+In [1] import datetime
+
+In [2] dataframe.<TAB> 
+
+datetime.MAXYEAR       datetime.datetime      datetime.timedelta
+datetime.MINYEAR       datetime.datetime_CAPI datetime.timezone
+datetime.date          datetime.time          datetime.tzinfo
+
+#introspection 
+
+Using ? ?? & wildcard 
+
+In [8]: import numpy as np
+
+In [9]: np.*load*?
+np.__loader__
+np.load
+np.loads
+np.loadtxt
+np.pkgload
+
