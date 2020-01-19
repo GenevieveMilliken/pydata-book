@@ -98,5 +98,24 @@ In Ipython, running the %matplotlib magic function will set up the integration s
 
 # 3.1 Data Structures and Sequences
 
+Tuples, lists, dicts, and sets 
 
+## Tuples
+Tuple is a fixed length, immutable sequence Python object. Easiest way to make one is with a comma separated sequence of values 
 
+tup = 4, 5, 6 
+nested_tuple = (4,5,6), (7,8)
+
+Objects stored in a tuple are not mutable and after a tuple is made its position cannot be changed. However, if the object inside is mutable (i.g. list or dict) its content, but not its position can be changed. 
+
+you can concatenate tuples using + 
+
+In [1] (5, None, "Hello") + (6, False, "Flowers")
+In [2] (5, None, "Hello", 6, False, "Flowers")
+
+As with lists, multiplying will concatenate x many copies: 
+
+(5, None, "Hello", 6, False, "Flowers") * 2 
+(5, None, "Hello", 6, False, "Flowers", 5, None, "Hello", 6, False, "Flowers")
+
+## Lists      
