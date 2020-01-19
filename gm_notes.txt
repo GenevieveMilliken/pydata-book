@@ -2,7 +2,7 @@ General notes for working through Wes McKinney's Python for Data Analysis
 
 ------- Chapter 2: Python Language Basics, IPython, and Jupyter Notebooks --------
 
-## Python Interpreter
+## 2.1 Python Interpreter
 
 The python interpreter can be launched in the commpand line using: 
 
@@ -14,7 +14,7 @@ $ python my_script.py
 
 	---------------------------------------------------------
 
-## IPython Basics
+# 2.2 IPython Basics
 IPython is the underlying structure of Jupyter Notebooks. Learning IPython allows you to understand some of the underlying features of Jupyter Notebooks. 
 
 The Ipython shell can be launched in the commpand line using:
@@ -91,6 +91,13 @@ IPython magic commands:
 https://ipython.readthedocs.io/en/stable/interactive/magics.html
 
 Matplot Integration 
+
+In Ipython, running the %matplotlib magic function will set up the integration so you can create multiple plot windows. In Jupyter Notebooks, it is: %matplotlib inline
+
+	---------------------------------------------------------
+
+# 2.3 Python Language Basics
+
 
 
 
